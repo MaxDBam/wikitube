@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+}
+
+h1 {
+    margin-inline-start: 1rem;
+    font-size: 3rem;
+}
+
+input[type="search"] {
+    margin-inline-end: 0.2rem;
+    width: 500px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.header {
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    height: 35px;
+    margin-inline-end: 1rem;
+}
+
+main {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-inline-end: 1rem;
+}
+
+aside {
+    margin-inline-start: 1rem;
+}
+
+.vid {
+    width: 550px;
+    display: flex;
+    align-items: center;
+    margin-block-end: 1rem;
+    border: 1px black solid;
+}
+
+.vid:hover {
+    cursor: pointer;
+}
+
+.vid img {
+    margin-inline-end: 0.2rem;
+}
+
+.wiki-desc {
+    width: 600px;
+}
+
+/* Helpers */
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+@media (max-width: 1200px) {
+    main {
+        justify-content: center;
+        margin-inline-end: 0;
+    }
+
+    aside {
+        margin-inline-start: 0;
+    }
+}
+
+@media (max-width: 820px) {
+    input[type="search"] {
+        width: 300px;
+    }
+}
+
+@media (max-width: 630px) {
+
+    .header {
+        display: block;
+    }
+
+    .search {
+        margin-inline-end: 0;
+        text-align: center;
+        margin-block-end: 1.5rem;
+        display: block;
+    }
+    
+    input[type="search"] {
+        height: 35px;
+        width: 250px;
+    }
+
+    .search button {
+        height: 35px;
+    }
+
+    .vid {
+        width: 340px;
+    }
+
+    .youtube-vid {
+        width: 340px;
+    }
+
+    .youtube-vid iframe {
+        width: 340px;
+        margin: auto auto;
+    }
+
+    .wiki-desc {
+        width: 340px;
+    }
+}
