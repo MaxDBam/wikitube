@@ -25,11 +25,20 @@
         </section>
     </main>
 
+    <footer class="flex">
+        <p class="searched-terms"></p>
+        <button class="clear-btn" onclick="onRemoveHistory()">Clear History</button>
+        <button class="change-theme-btn" onclick="onChangeTheme()">Change Theme</button>
+    </footer>
+
     <script src="lib/axios.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/main-controller.js"></script>
+    <script src="js/service-controller.js"></script>
     <script src="js/youtube-service.js"></script>
     <script src="js/youtube-controller.js"></script>
     <script src="js/wiki-service.js"></script>
     <script src="js/wiki-controller.js"></script>
+    <script src="js/storage-service.js"></script>
 </body>
 </html>

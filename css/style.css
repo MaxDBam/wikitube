@@ -57,6 +57,27 @@ aside {
     width: 600px;
 }
 
+footer {
+    background-color: lightgray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 5rem;
+    height: 112px;
+}
+
+footer p {
+    margin-block-start: 0;
+}
+
+footer button {
+    margin-block-end: 0.2rem;
+}
+
+.searched-terms {
+    flex-wrap: wrap;
+}
+
 /* Helpers */
 
 .flex {
