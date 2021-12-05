@@ -1,7 +1,7 @@
 'use strict';
 
 const STORAGE_KEY = 'terms'
-var gTerms = []
+var gTerms;
 
 function saveTerms(term) {
     gTerms.push(term)
@@ -10,8 +10,12 @@ function saveTerms(term) {
 
 function getTerms() {
     let searchedTerms = LoadFromStorage(STORAGE_KEY)
-    if (searchedTerms) return searchedTerms
-    return ''
+    if (!searchedTerms || !searchedTerms.length) {
+        searchedTerms = []
+    } 
+
+    gTerms = searchedTerms
+    return gTerms.join(', ')
 }
 
 function clearTerms() {
