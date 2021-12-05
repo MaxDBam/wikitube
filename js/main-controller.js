@@ -8,6 +8,8 @@ function onInit() {
     getWikiQuery('Tennis')
         .then(renderWikiInfo)
         .catch(error => console.log(error))
+    getTerms()
+    renderSearchedTerms()
 }
 
 function onGetYoutubeAndWikiQueries() {
@@ -21,7 +23,7 @@ function onGetYoutubeAndWikiQueries() {
         .then(renderWikiInfo)
         .catch(error => console.log(error))
     renderSearchedTerms()
-    elInput.value = ' '
+    elInput.value = ''
 }
 
 function renderSearchedTerms() {
